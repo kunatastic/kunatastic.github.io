@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Humaira";
+  src: url("../fonts/Humaira\ demo.otf");
+}
+
+@font-face {
+  font-family: "Allison";
+  src: url("../fonts/Allison\ Tessa\ Oblique.ttf");
+}
+@font-face {
+  font-family: "South";
+  src: url("../fonts/South\ Gardens\ Personal\ Use.ttf");
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+/* Utilities */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+/* Colors */
+:root {
+  --text-color-1: #fff;
+  --text-color-2: #cacaca;
+
+  --theme-color: #000;
+
+  --primary-color-1: #3d3906;
+  --primary-text-1: #dbd9b6;
+
+  --primary-color-2: #012e2e;
+  --primary-text-2: #c3e6e6;
+
+  --primary-color-3: #3d2106;
+  --primary-text-3: #eee0d3;
+
+  --primary-color-4: #2a3d06;
+  --primary-text-4: #cdddae;
+
+  --primary-color-5: #063d2b;
+  --primary-text-5: #addacb;
+
+  --primary-color-6: #22175c;
+  --primary-text-6: #bab5db;
+
+  --github-color: #fff;
+  --linkedin-color: #0077b5;
+  --gmail-color: #bb001b;
+  --instagram-color: #e1306c;
+}
