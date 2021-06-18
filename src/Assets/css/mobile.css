@@ -1,0 +1,53 @@
+/* IPADS */
+@media screen and (max-width: 1024px) {
+  .main__grid {
+    grid-template-rows: none;
+    grid-template-columns: none;
+  }
+  .nav__bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+    max-height: 12vh;
+  }
+  .nav__links {
+    display: none;
+  }
+  .nav__social {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .logo {
+    font-size: 1.25em;
+  }
+
+  /* ======content======= */
+  .me {
+    font-size: 2.5em;
+    padding: 1em 0.25em;
+  }
+  .main__container,
+  .content__container {
+    height: auto;
+  }
+
+  .content {
+    max-width: 80%;
+  }
+
+  .content p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+
+/* mobile phones */
+@media screen and (max-width: 600px) {
+  .main__grid {
+    grid-template-rows: 12% 88%;
+    grid-template-columns: none;
+  }
+}

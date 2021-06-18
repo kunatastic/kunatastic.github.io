@@ -2,6 +2,8 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SiGithub, SiGmail, SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
 function SideNav() {
   return (
     <>
@@ -9,11 +11,23 @@ function SideNav() {
         <NavigationLogo />
         <NavigationLinks />
         <SocialLogoSection />
+        <HamBurger />
       </nav>
     </>
   );
 }
 export default SideNav;
+
+// ====================
+const HamBurger: React.FC = () => {
+  return (
+    <>
+      <div className="hamburger">
+        <GiHamburgerMenu />
+      </div>
+    </>
+  );
+};
 
 // =====================
 const NavigationLogo: React.FC = () => {
@@ -47,7 +61,7 @@ const NavigationLinks: React.FC = () => {
           className={`animated ${
             location.pathname === "/education"
               ? "selected selected__education"
-              : "none"
+              : ""
           }`}
           to="/education"
         >
@@ -55,9 +69,7 @@ const NavigationLinks: React.FC = () => {
         </Link>
         <Link
           className={`animated ${
-            location.pathname === "/skills"
-              ? "selected selected__skills"
-              : "none"
+            location.pathname === "/skills" ? "selected selected__skills" : ""
           }`}
           to="/skills"
         >
@@ -67,7 +79,7 @@ const NavigationLinks: React.FC = () => {
           className={`animated ${
             location.pathname === "/projects"
               ? "selected selected__project"
-              : "none"
+              : ""
           }`}
           to="/projects"
         >
@@ -77,7 +89,7 @@ const NavigationLinks: React.FC = () => {
           className={`animated ${
             location.pathname === "/achievements"
               ? "selected selected__achievement"
-              : "none"
+              : ""
           }`}
           to="/achievements"
         >
@@ -92,7 +104,7 @@ const NavigationLinks: React.FC = () => {
 const SocialLogoSection: React.FC = () => {
   return (
     <>
-      <div className="flex logo__flex">
+      <div className="nav__social flex logo__flex">
         <a href="https://github.com/kunatastic">
           <div className="github flex">
             <SiGithub />
