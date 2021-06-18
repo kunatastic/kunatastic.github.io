@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-v2.0/static/css/main.0fb93dc3.chunk.css",
+    "main.js": "/portfolio-v2.0/static/js/main.6ac3bf43.chunk.js",
+    "main.js.map": "/portfolio-v2.0/static/js/main.6ac3bf43.chunk.js.map",
+    "runtime-main.js": "/portfolio-v2.0/static/js/runtime-main.6bd201d7.js",
+    "runtime-main.js.map": "/portfolio-v2.0/static/js/runtime-main.6bd201d7.js.map",
+    "static/js/2.ccca81de.chunk.js": "/portfolio-v2.0/static/js/2.ccca81de.chunk.js",
+    "static/js/2.ccca81de.chunk.js.map": "/portfolio-v2.0/static/js/2.ccca81de.chunk.js.map",
+    "static/js/3.522a8c2f.chunk.js": "/portfolio-v2.0/static/js/3.522a8c2f.chunk.js",
+    "static/js/3.522a8c2f.chunk.js.map": "/portfolio-v2.0/static/js/3.522a8c2f.chunk.js.map",
+    "index.html": "/portfolio-v2.0/index.html",
+    "static/css/main.0fb93dc3.chunk.css.map": "/portfolio-v2.0/static/css/main.0fb93dc3.chunk.css.map",
+    "static/js/2.ccca81de.chunk.js.LICENSE.txt": "/portfolio-v2.0/static/js/2.ccca81de.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/portfolio-v2.0/static/media/South Gardens Personal Use.8fbfe74c.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6bd201d7.js",
+    "static/js/2.ccca81de.chunk.js",
+    "static/css/main.0fb93dc3.chunk.css",
+    "static/js/main.6ac3bf43.chunk.js"
+  ]
+}
