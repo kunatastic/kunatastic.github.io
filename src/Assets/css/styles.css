@@ -153,6 +153,7 @@
 }
 .content p {
   line-height: 1.75;
+  overflow: scroll;
   font-size: 1.15em;
   text-align: justify;
 }
