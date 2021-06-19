@@ -1,48 +1,19 @@
-.main__container {
-  height: 100vh;
+.parent {
+  min-height: 100vh;
   width: 100%;
-  /* overflow: hidden; */
 }
 
-.main__grid {
-  grid-template-columns: 12% 88%;
-}
-
-.container__home {
-  color: var(--primary-text-1);
-  background-color: var(--primary-color-1);
-}
-
-.container__about {
-  color: var(--primary-text-2);
-  background-color: var(--primary-color-2);
-}
-
-.container__education {
-  color: var(--primary-text-3);
-  background-color: var(--primary-color-3);
-}
-
-.container__skills {
-  color: var(--primary-text-4);
-  background-color: var(--primary-color-4);
-}
-
-.container__project {
-  color: var(--primary-text-5);
-  background-color: var(--primary-color-5);
-}
-
-.container__achievements {
-  color: var(--primary-text-6);
-  background-color: var(--primary-color-6);
-}
+/* ================================= */
 
 /* Navigation bar */
 .nav__bar {
+  position: fixed;
+  left: 0;
+  right: 0;
   background: var(--theme-color);
   color: var(--text-color-1);
-  height: 100%;
+  height: 100vh;
+  width: var(--sidebar-nav);
   padding: 2em 0;
 }
 
@@ -53,11 +24,12 @@
   letter-spacing: 0.03em;
   font-size: 3em;
 }
+
 .me {
   padding: 1em;
   font-family: South;
   font-weight: 500;
-  font-size: 5em;
+  font-size: 500%;
 }
 
 .nav__links a {
@@ -66,7 +38,7 @@
   color: var(--text-color-2);
   transition: 0.15s ease-in-out;
   font-weight: 500;
-  width: 12em;
+  width: var(--sidebar-nav);
   text-align: right;
   overflow-x: hidden;
 }
@@ -74,6 +46,7 @@
 .animated:hover {
   animation: col 1.5s cubic-bezier(0.215, 0.61, 0.81, 1);
 }
+
 @keyframes col {
   0% {
     background-color: rgba(53, 53, 53, 0.281);
@@ -83,10 +56,10 @@
 .selected {
   box-shadow: 6px 6px 100px rgba(255, 255, 255, 0.05);
 }
+
 .selected:hover {
   animation: none;
 }
-
 .selected__home {
   background-color: var(--primary-color-1);
 }
@@ -148,12 +121,13 @@
 
 .content {
   margin: 0 auto;
-  height: 100%;
+  min-height: 100vh;
   max-width: 75%;
+  padding-left: var(--sidebar-nav);
 }
+
 .content p {
   line-height: 1.75;
-  overflow: scroll;
   font-size: 1.15em;
   text-align: justify;
 }

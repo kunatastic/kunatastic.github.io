@@ -80,4 +80,40 @@ a {
   --linkedin-color: #0077b5;
   --gmail-color: #bb001b;
   --instagram-color: #e1306c;
+
+  --sidebar-nav: 12em;
 }
+
+/*========================== Background containers */
+
+.container__home {
+  color: var(--primary-text-1);
+  background-color: var(--primary-color-1);
+}
+
+.container__about {
+  color: var(--primary-text-2);
+  background-color: var(--primary-color-2);
+}
+
+.container__education {
+  color: var(--primary-text-3);
+  background-color: var(--primary-color-3);
+}
+
+.container__skills {
+  color: var(--primary-text-4);
+  background-color: var(--primary-color-4);
+}
+
+.container__project {
+  color: var(--primary-text-5);
+  background-color: var(--primary-color-5);
+}
+
+.container__achievements {
+  color: var(--primary-text-6);
+  background-color: var(--primary-color-6);
+}
+
+/* =====================NAVIGATION============ */

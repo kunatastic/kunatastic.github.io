@@ -1,41 +1,54 @@
 /* IPADS */
 @media screen and (max-width: 1024px) {
-  .main__grid {
-    grid-template-rows: none;
-    grid-template-columns: none;
-  }
   .nav__bar {
-    flex-direction: row;
+    position: relative;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2em;
-    max-height: 12vh;
+    width: 100%;
   }
-  .nav__links {
+  .close .nav__bar {
+    flex-direction: row;
+    padding: 0 3em;
+    max-height: 5em;
+  }
+
+  .open .nav__bar {
+    padding: 20px 0;
+    height: 100vh;
+  }
+  .close .nav__links,
+  .close .nav__social {
     display: none;
   }
-  .nav__social {
-    display: none;
+
+  .open .nav__links a {
+    text-align: center;
+    width: 100vw;
   }
+
   .hamburger {
     display: block;
   }
+  .open .hamburger {
+    position: absolute;
+    top: 1.9em;
+    right: 3em;
+  }
+
   .logo {
     font-size: 1.25em;
+    padding: 0;
   }
 
   /* ======content======= */
   .me {
     font-size: 2.5em;
+    padding-top: 10vh;
     padding: 1em 0.25em;
-  }
-  .main__container,
-  .content__container {
-    height: auto;
   }
 
   .content {
-    max-width: 80%;
+    padding: 0;
   }
 
   .content p {

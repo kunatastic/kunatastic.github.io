@@ -1,33 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { SiGithub, SiGmail, SiInstagram } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function SideNav() {
+  const [openNav, setOpenNav] = useState<Boolean>(false);
   return (
     <>
-      <nav className="nav__bar flex nav__flex">
-        <NavigationLogo />
-        <NavigationLinks />
-        <SocialLogoSection />
-        <HamBurger />
-      </nav>
+      <div className={openNav === true ? "open" : "close"}>
+        <nav className="nav__bar flex nav__flex">
+          {openNav}
+          <NavigationLogo />
+          <NavigationLinks />
+          <SocialLogoSection />
+          <div
+            className="hamburger"
+            onClick={() => {
+              setOpenNav(!openNav);
+              console.log(openNav);
+            }}
+          >
+            <GiHamburgerMenu />
+          </div>
+        </nav>
+      </div>
     </>
   );
 }
 export default SideNav;
 
 // ====================
-const HamBurger: React.FC = () => {
-  return (
-    <>
-      <div className="hamburger">
-        <GiHamburgerMenu />
-      </div>
-    </>
-  );
-};
 
 // =====================
 const NavigationLogo: React.FC = () => {

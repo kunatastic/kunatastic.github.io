@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="main__container grid main__grid">
+        <div className="parent">
           <SideNav />
           <Switch>
             <Route path="/" exact component={Welcome} />
