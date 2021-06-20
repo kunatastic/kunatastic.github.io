@@ -5,9 +5,11 @@ import "./Assets/css/styles.css";
 import "./Assets/css/mobile.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import AnimationTesting from "./Layouts/Demo/AnimationTesting";
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    {/* <AnimationTesting /> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

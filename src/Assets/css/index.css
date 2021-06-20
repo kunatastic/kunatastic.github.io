@@ -53,8 +53,8 @@ a {
 
 /* Colors */
 :root {
-  --text-color-1: #fff;
-  --text-color-2: #cacaca;
+  --text-color-1: rgb(223, 223, 223);
+  --text-color-2: #a3a3a3;
 
   --theme-color: #000;
 

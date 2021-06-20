@@ -34,7 +34,7 @@ export default SideNav;
 
 // =====================
 const NavigationLogo: React.FC = () => {
-  return <h1 className="logo">KKJ</h1>;
+  return <h1 className="logo logo__animation">KKJ</h1>;
 };
 
 // =====================
@@ -45,7 +45,7 @@ const NavigationLinks: React.FC = () => {
     <>
       <ul className="nav__links flex">
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/" ? "selected selected__home" : ""
           }`}
           to="/"
@@ -53,7 +53,7 @@ const NavigationLinks: React.FC = () => {
           Home
         </Link>
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/about" ? "selected selected__about" : ""
           }`}
           to="/about"
@@ -61,7 +61,7 @@ const NavigationLinks: React.FC = () => {
           About Me
         </Link>
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/education"
               ? "selected selected__education"
               : ""
@@ -71,7 +71,7 @@ const NavigationLinks: React.FC = () => {
           Education
         </Link>
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/skills" ? "selected selected__skills" : ""
           }`}
           to="/skills"
@@ -79,7 +79,7 @@ const NavigationLinks: React.FC = () => {
           Skills
         </Link>
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/projects"
               ? "selected selected__project"
               : ""
@@ -89,7 +89,7 @@ const NavigationLinks: React.FC = () => {
           Projects
         </Link>
         <Link
-          className={`animated ${
+          className={`link__animation ${
             location.pathname === "/achievements"
               ? "selected selected__achievement"
               : ""
@@ -109,22 +109,22 @@ const SocialLogoSection: React.FC = () => {
     <>
       <div className="nav__social flex logo__flex">
         <a href="https://github.com/kunatastic">
-          <div className="github flex">
+          <div className="github social__animation flex">
             <SiGithub />
           </div>
         </a>
         <a href="https://www.linkedin.com/in/kunal-kumar-jha/">
-          <div className="linkedin flex">
+          <div className="linkedin social__animation flex">
             <FaLinkedinIn />
           </div>
         </a>
         <a href="mailto:kunatastic@gmail.com">
-          <div className="gmail flex">
+          <div className="gmail social__animation flex">
             <SiGmail />
           </div>
         </a>
         <a href="https://instagram.com/kunatastic">
-          <div className="instagram flex">
+          <div className="instagram social__animation flex">
             <SiInstagram />
           </div>
         </a>

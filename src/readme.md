@@ -4,5 +4,5 @@
 - [x] Finalize the navgations
   > [ x ] Template completed
 - [ ] Header Content (phewww)
-- [ ] Mobile responsive
+- [x] Mobile responsive
 - [ ] Page changing transactions
