@@ -6,21 +6,16 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function SideNav() {
   const [openNav, setOpenNav] = useState<Boolean>(false);
+
   return (
     <>
       <div className={openNav === true ? "open" : "close"}>
         <nav className="nav__bar flex nav__flex">
           {openNav}
           <NavigationLogo />
-          <NavigationLinks />
+          <NavigationLinks setOpenNav={setOpenNav} />
           <SocialLogoSection />
-          <div
-            className="hamburger"
-            onClick={() => {
-              setOpenNav(!openNav);
-              console.log(openNav);
-            }}
-          >
+          <div className="hamburger" onClick={() => setOpenNav(!openNav)}>
             <GiHamburgerMenu />
           </div>
         </nav>
@@ -34,11 +29,19 @@ export default SideNav;
 
 // =====================
 const NavigationLogo: React.FC = () => {
-  return <h1 className="logo logo__animation">KKJ</h1>;
+  return (
+    <h1 className="logo logo__animation">
+      <Link to="/">KKJ</Link>
+    </h1>
+  );
 };
 
 // =====================
-const NavigationLinks: React.FC = () => {
+const NavigationLinks = ({
+  setOpenNav,
+}: {
+  setOpenNav: (value: Boolean) => void;
+}) => {
   const location = useLocation();
 
   return (
@@ -48,6 +51,7 @@ const NavigationLinks: React.FC = () => {
           className={`link__animation ${
             location.pathname === "/" ? "selected selected__home" : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/"
         >
           Home
@@ -56,6 +60,7 @@ const NavigationLinks: React.FC = () => {
           className={`link__animation ${
             location.pathname === "/about" ? "selected selected__about" : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/about"
         >
           About Me
@@ -66,6 +71,7 @@ const NavigationLinks: React.FC = () => {
               ? "selected selected__education"
               : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/education"
         >
           Education
@@ -74,6 +80,7 @@ const NavigationLinks: React.FC = () => {
           className={`link__animation ${
             location.pathname === "/skills" ? "selected selected__skills" : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/skills"
         >
           Skills
@@ -84,6 +91,7 @@ const NavigationLinks: React.FC = () => {
               ? "selected selected__project"
               : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/projects"
         >
           Projects
@@ -94,6 +102,7 @@ const NavigationLinks: React.FC = () => {
               ? "selected selected__achievement"
               : ""
           }`}
+          onClick={() => setOpenNav(false)}
           to="/achievements"
         >
           Achievements

@@ -9,35 +9,12 @@ function Welcome() {
         <div className="content">
           <h1 className="me">Kunal Kumar Jha</h1>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
-            odio ratione suscipit quidem, voluptate similique? Dicta quas, eaque
-            facilis iure libero culpa repudiandae accusantium tenetur commodi
-            eligendi vero blanditiis. Earum.Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Eligendi odio ratione suscipit quidem,
-            voluptate similique? Dicta quas, eaque facilis iure libero culpa
-            repudiandae accusantium tenetur commodi eligendi vero blanditiis.
-            Earum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Eligendi odio ratione suscipit quidem, voluptate similique? Dicta
-            quas, eaque facilis iure libero culpa repudiandae accusantium
-            tenetur commodi eligendi vero blanditiis. Earum.Lorem ipsum dolor
-            sit, amet consectetur adipisicing elit. Eligendi odio ratione
-            suscipit quidem, voluptate similique? Dicta quas, eaque facilis iure
-            libero culpa repudiandae accusantium tenetur commodi eligendi vero
-            blanditiis. Earum.Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Eligendi odio ratione suscipit quidem, voluptate
-            similique? Dicta quas, eaque facilis iure libero culpa repudiandae
-            accusantium tenetur commodi eligendi vero blanditiis. Earum.Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Eligendi odio
-            ratione suscipit quidem, voluptate similique? Dicta quas, eaque
-            facilis iure libero culpa repudiandae accusantium tenetur commodi
-            eligendi vero blanditiis. Earum.Lorem ipsum dolor sit, amet
-            consectetur adipisicing elit. Eligendi odio ratione suscipit quidem,
-            voluptate similique? Dicta quas, eaque facilis iure libero culpa
-            repudiandae accusantium tenetur commodi eligendi vero blanditiis.
-            Earum.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Eligendi odio ratione suscipit quidem, voluptate similique? Dicta
-            quas, eaque facilis iure libero culpa repudiandae accusantium
-            tenetur commodi eligendi vero blanditiis. Earum.
+            I'm a <span className="imp">Full Stack Web Devloper</span>,
+            <span className="imp"> AI ML Enthusiasts</span> and
+            <span className="imp"> Competitive Programmer</span>. Student at{" "}
+            <i>Vellore Institute of Technology, India</i>. I like and enjoy in
+            research related learning. I have published 2 papers in the field of
+            Artifical intelligence and computer vision.
           </p>
         </div>
       </div>
