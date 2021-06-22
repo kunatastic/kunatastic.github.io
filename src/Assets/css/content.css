@@ -1,20 +1,26 @@
 /* Welcome */
-
-.container__home .me::after {
+/* 
+.container__home .me::after,
+.container__home .me::before {
   border-top: 10px double var(--primary-text-1);
 }
-.container__about .me::after {
+.container__about .me::after,
+.container__about .me::before {
   border-top: 10px double var(--primary-text-2);
 }
-.container__education .me::after {
+.container__education .me::after,
+.container__education .me::before {
   border-top: 10px double var(--primary-text-3);
 }
-.container__skills .me::after {
+.container__skills .me::after,
+.container__skills .me::before {
   border-top: 10px double var(--primary-text-4);
 }
-.container__project .me::after {
+.container__project .me::after,
+.container__project .me::before {
   border-top: 10px double var(--primary-text-5);
 }
-.container__achievements .me::after {
+.container__achievements .me::after,
+.container__achievements .me::before {
   border-top: 10px double var(--primary-text-6);
-}
+} */
