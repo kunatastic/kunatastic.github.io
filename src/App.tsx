@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Welcome from "./Layouts/Welcome";
 import About from "./Layouts/About";
 import Education from "./Layouts/Education";
@@ -10,7 +10,7 @@ import SideNav from "./Layouts/SideNav";
 function App() {
   return (
     <>
-      <Router>
+      <HashRouter>
         <div className="parent">
           <SideNav />
           <Switch>
@@ -22,7 +22,7 @@ function App() {
             <Route path="/achievements" exact component={Achievements} />
           </Switch>
         </div>
-      </Router>
+      </HashRouter>
     </>
   );
 }

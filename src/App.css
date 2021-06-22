@@ -71,6 +71,8 @@ body,
 #t4:target #p1 .icon,
 #t5:target #p1 .icon {
   -webkit-filter: blur(3px);
+  -moz-webkit-filter: blur(3px);
+  -o-webkit-filter: blur(3px);
 }
 
 .icon {

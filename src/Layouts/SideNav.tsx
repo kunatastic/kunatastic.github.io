@@ -58,13 +58,14 @@ const NavigationLinks = ({
         </Link>
         <Link
           className={`link__animation ${
-            location.pathname === "/about" ? "selected selected__about" : ""
+            location.pathname === "/skills" ? "selected selected__skills" : ""
           }`}
           onClick={() => setOpenNav(false)}
-          to="/about"
+          to="/skills"
         >
-          About Me
+          My Skillset
         </Link>
+
         <Link
           className={`link__animation ${
             location.pathname === "/education"
@@ -76,15 +77,7 @@ const NavigationLinks = ({
         >
           Education
         </Link>
-        <Link
-          className={`link__animation ${
-            location.pathname === "/skills" ? "selected selected__skills" : ""
-          }`}
-          onClick={() => setOpenNav(false)}
-          to="/skills"
-        >
-          Skills
-        </Link>
+
         <Link
           className={`link__animation ${
             location.pathname === "/projects"
@@ -95,6 +88,15 @@ const NavigationLinks = ({
           to="/projects"
         >
           Projects
+        </Link>
+        <Link
+          className={`link__animation ${
+            location.pathname === "/about" ? "selected selected__about" : ""
+          }`}
+          onClick={() => setOpenNav(false)}
+          to="/about"
+        >
+          About Me
         </Link>
         <Link
           className={`link__animation ${

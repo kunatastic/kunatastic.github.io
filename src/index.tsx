@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import "./Assets/css/utils.css";
 import "./Assets/css/navbar.css";
-import "./Assets/css/welcome.css";
+import "./Assets/css/content.css";
 import "./Assets/css/mobile.css";
 
 import App from "./App";

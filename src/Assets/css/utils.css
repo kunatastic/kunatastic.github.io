@@ -122,3 +122,85 @@ a {
   min-height: 100vh;
   width: 100%;
 }
+
+/* ======== Content ======= */
+
+.content {
+  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 75%;
+  padding-left: var(--sidebar-nav);
+}
+
+.content p {
+  line-height: 1.6;
+  font-size: 1.15em;
+  text-align: justify;
+  animation: content__frame 0.5s ease-in;
+  -moz-animation: content__frame 0.5s ease-in;
+}
+
+@keyframes content__frame {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.content__container {
+  height: 100%;
+  width: 100%;
+}
+
+.me {
+  padding: 1em 0;
+  font-family: South;
+  font-weight: 500;
+  font-size: 500%;
+  animation: me__frame 0.5s ease-in;
+  -moz-animation: me__frame 0.5s ease-in;
+  display: table;
+  white-space: nowrap;
+}
+.me:before,
+.me:after {
+  display: table-cell;
+  position: relative;
+  top: 1em;
+  width: 50%;
+  content: "";
+}
+.me:after {
+  left: 2.5%;
+}
+.me::before {
+  right: 2.5%;
+}
+
+@keyframes me__frame {
+  0% {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+
+h2.no-span {
+  display: table;
+  white-space: nowrap;
+}
+h2.no-span:before,
+h2.no-span:after {
+  border-top: 1px solid green;
+  content: "";
+  display: table-cell;
+  position: relative;
+  top: 0.5em;
+  width: 45%;
+}
+h2.no-span:before {
+  right: 1.5%;
+}
+h2.no-span:after {
+  left: 1.5%;
+}

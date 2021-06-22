@@ -1,0 +1,20 @@
+/* Welcome */
+
+.container__home .me::after {
+  border-top: 10px double var(--primary-text-1);
+}
+.container__about .me::after {
+  border-top: 10px double var(--primary-text-2);
+}
+.container__education .me::after {
+  border-top: 10px double var(--primary-text-3);
+}
+.container__skills .me::after {
+  border-top: 10px double var(--primary-text-4);
+}
+.container__project .me::after {
+  border-top: 10px double var(--primary-text-5);
+}
+.container__achievements .me::after {
+  border-top: 10px double var(--primary-text-6);
+}
