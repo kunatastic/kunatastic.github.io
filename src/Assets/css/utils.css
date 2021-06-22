@@ -163,19 +163,21 @@ a {
   display: table;
   white-space: nowrap;
 }
+
 .me:before,
 .me:after {
+  /* border-top: 1px solid green; */
+  content: "";
   display: table-cell;
   position: relative;
   top: 1em;
-  width: 50%;
-  content: "";
+  width: 100%;
+}
+.me:before {
+  right: 2.5%;
 }
 .me:after {
   left: 2.5%;
-}
-.me::before {
-  right: 2.5%;
 }
 
 @keyframes me__frame {
@@ -183,24 +185,4 @@ a {
     opacity: 0;
     transform: translateY(-12px);
   }
-}
-
-h2.no-span {
-  display: table;
-  white-space: nowrap;
-}
-h2.no-span:before,
-h2.no-span:after {
-  border-top: 1px solid green;
-  content: "";
-  display: table-cell;
-  position: relative;
-  top: 0.5em;
-  width: 45%;
-}
-h2.no-span:before {
-  right: 1.5%;
-}
-h2.no-span:after {
-  left: 1.5%;
 }
